@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+html, body {
+    overflow: hidden; /* Prevents scrolling */
+    width: 100%;
+    height: 100%;
+    background-color: #E6ECF0; /* Light blue shade */
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  /* Main container */
+  .landing-container {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+  
+  /* Header container */
+  .header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(84, 44, 44, 0.1);
+    z-index: 1000;
+  }
+  
+  .header-container h1 {
+    margin: 0;
+    text-align: left;
+    padding-left: 20px; /* Moves text to the right */
+  }
+  
+  
+  .content-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(100% + 60px); /* Increase width on both sides */
+    max-width: 2000px; /* Control max width */
+    margin: 80px auto 0; /* Keep centered */
+    transform: translateX(-50px); /* Move left */
+    margin-top: 110px; /* Adjust this value as needed */
+
+    padding-top: 20px; /* Adds extra spacing */
+  }
+  
+  
+  
+  /* Search & filter container */
+  .search-filter-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  /* Search Box */
+  .search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 5px;
+    flex-grow: 1;
+    max-width: 300px;
+  }
+  
+  .search-box input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .search-icon {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+/* Type Filter Dropdown */
+.filter-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.filter-button {
+  background: #cee3e9;
+  border: 1px solid #064157;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+}
+
+.filter-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #fff;
+  border: 1px solid #aaa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  width: 150px;
+  z-index: 100;
+}
+
+.filter-dropdown.active .filter-menu {
+  display: block;
+}
+
+/* Dropdown Options */
+.filter-menu label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.filter-menu label input {
+  margin-right: 5px;
+}
+
+
+  .collections-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .collections-table th,
+  .collections-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .collections-table th {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d2caca;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .collections-table tr:hover {
+    background-color: hsl(0, 0%, 99%);
+  }
+  
+  .collections-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .collections-table td:first-child strong {
+    font-weight: normal; /* Remove bold */
+    color: black; /* Change to desired text color */
+  }
+  
+  .collections-table .artist-text {
+    color: grey; /* Set artist name color to grey */
+    font-size: 14px; /* Optionally reduce font size */
+  }
+  
+  /* View Details Styling */
+  .view-details {
+    color: darkblue;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .view-details .eye-icon {
+    font-size: 1.2em;
+  }
+  
+  .view-details:hover {
+    color: navy;
+  }
+  
+ 
+.breadcrumb {
+    font-size: 1rem;
+    margin-top: 10px; /* Move breadcrumb slightly down */
+    margin-bottom: 15px;
+    color: #555;
+    display: flex; 
+    align-items: center; /* Align items properly */
+    gap: 8px; 
+    padding-left: 20px; 
+}
+
+/* Breadcrumb Link */
+.breadcrumb a {
+    text-decoration: none;
+    color: grey; 
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+    color: darkgrey; 
+}
+
+
+.breadcrumb span {
+    color: black; 
+}
+
+  .collection-header {
+    width: 100%;
+    text-align: left;
+    background-color: #ffffff; 
+    padding: 5px 0; 
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+    padding-left: 25px; 
+    font-size: 1rem; 
+}  
+.collection-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1600px;
+    margin: 30px auto 40px; /* Reduced margin-top to move it up */
+}
+
+  /* Detail Item */
+  .detail-item {
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  /* Songs Table Container */
+  .songs-table-container {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1600px;
+    margin: -10px auto 0px; /* Negative top margin to shift it up */
+  }
+  
+  
+  
+  
+  .songs-table-container h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1200px) {
+    .collection-details {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .landing-container {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .header-container {
+      text-align: center;
+    }
+  
+    .search-filter-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .search-box {
+      max-width: 100%;
+    }
+  
+    .collections-table th,
+    .collections-table td {
+      padding: 10px;
+    }
+  
+    .collection-details {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+   

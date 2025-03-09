@@ -1,0 +1,33 @@
+{
+    "collections": [
+      {
+        "id": "12345",
+        "name": "EPIC: The Troy Saga (Official Concept Album)",
+        "artist": "Jorge Rivera-Herrans",
+        "type": "EP",
+        "songCount": 5,
+        "durationInSeconds": 900,
+        "sizeInBytes": 48488,
+        "releasedOn": "2024-09-03T14:35:00Z"
+      }
+    ],
+    "collectionDetails": {
+      "12345": {
+        "id": "12345",
+        "name": "EPIC: The Troy Saga (Official Concept Album)",
+        "artist": "Jorge Rivera-Herrans",
+        "type": "EP",
+        "songCount": 5,
+        "songs": [
+          {
+            "title": "The Battle of Troy",
+            "durationInSeconds": 300,
+            "sizeInBytes": 48488,
+            "performers": ["Jorge Rivera-Herrans"]
+          }
+        ],
+        "releasedOn": "2024-09-03T14:35:00Z"
+      }
+    }
+  }
+  
